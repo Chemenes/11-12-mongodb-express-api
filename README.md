@@ -8,3 +8,4 @@ turkeyRouter.post will post new turkey to database.
 turkeyRouter.put places new information on turkey to database.
 turkeyRouter.delete will delete turkey information from database.
 
+Test routes refactored from if statements to .catch(next) function.

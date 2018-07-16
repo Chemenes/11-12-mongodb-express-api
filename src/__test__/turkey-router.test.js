@@ -56,16 +56,6 @@ describe('GET requests to /api/turkey', () => {
         expect(response.body.location).toEqual(mockTurkey.location);
       });
   });
-
-  test('404 GET: no turkey with this id', () => {
-    return superagent.get(`${apiUrl}/Id doesn't work`)
-      .then((response) => {
-        throw response;
-      })
-      .catch((err) => {
-        expect(err.status).toEqual(404);
-      });
-  });
 });
 
 describe('PUT request to /api/turkey', () => {
